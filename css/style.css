@@ -22,3 +22,167 @@ body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
 }
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.d-col{
+    flex-direction: column;
+}
+.j-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.btn{
+    background-color: var(--purple);
+    border-radius: 20px;
+    padding: 0.5rem 5rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+/* header */
+header{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: .70rem 2rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+}
+.main-menu{
+    display: none;
+}
+.main-menu a{
+    color: var(--white);
+    text-decoration: none;
+}
+/* main */
+section{
+    padding: 0 2rem;
+}
+#planning, #features, #get-started{
+    background-color: var(--purple);
+} 
+/* prima sezione */
+
+.card{
+    background-color: var(--light-blue);
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+.cards{
+    padding: 1rem 2rem;
+    
+}
+a i{
+    padding-right: 1rem;
+}
+
+.inner{
+    padding-top: 2rem;
+}
+.card i{
+    color: var(--blue);
+    font-size: 50px;
+    text-align: center;
+}
+.card h3{
+    color: var(--blue);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+#apple{
+    font-size: 1rem;
+    color: var(--white);
+}
+.card p{
+    padding-bottom: 1rem;
+}
+#intro .btn{
+    background-color: var(--blue);
+}
+
+/* seconda sezione */
+#planning .container{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    color: var(--white);
+}
+#planning h2:not(.card h2){
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+#planning p{
+    line-height: 1.5rem;
+    padding: 2rem 0;
+}
+#planning .card{
+    background-color: var(--white);
+    color: var(--black);
+}
+#planning span i{
+    color: var(--black);
+    font-size: 1rem;
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+}
+/* terza sezione */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    background-color: var(--dark-gray);
+}
+
+/* RESPONSIVE */
+@media screen and (min-width:768px){
+    .container{
+        max-width: 750px;
+    }
+    #intro .cards{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    #intro .card{
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(33.33% - 1.5rem);
+    }
+    #intro .card:first-child{
+        width: calc(66.66% - 1.5rem);
+    }
+}
