@@ -73,7 +73,7 @@ header{
     text-decoration: none;
 }
 /* main */
-section{
+section, footer{
     padding: 0 2rem;
 }
 #planning, #features, #get-started{
@@ -171,7 +171,23 @@ a i{
 #testimonials img{
     width: 100%;
     border-radius: 50%;
-    
+}
+.avatars{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.testimonail1{
+    background-image: url(../img/testimonial1.jpg);
+}
+.testimonail2{
+    background-image: url(../img/testimonial2.jpg);
+}
+.testimonail3{
+    background-image: url(../img/testimonial3.jpg);
 }
 #testimonials h4{
     padding-bottom: 2rem;
@@ -229,28 +245,41 @@ a i{
 #about-us .btn{
     padding: 0.5rem 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* sesta sezione */
+#get-started .container{
+    color: var(--white);
+    padding: 4rem 0;
+}
+#get-started h3{
+    font-size: 1.5rem;
+}
+#get-started h2{
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+.big-btn{
+    background-color: var(--white);
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    padding: 1rem 4rem;
+    color: var(--purple);
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+#get-started a{
+    color: var(--white);
+}
 
 /* footer */
 footer{
     background-color: var(--dark-gray);
+    color: var(--white);
 }
+footer p{
+    padding: 2rem 0;
+}
+
 
 /* RESPONSIVE */
 @media screen and (min-width:768px){
