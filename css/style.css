@@ -13,6 +13,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 .debug{
     border: 1px solid black;
@@ -21,9 +23,10 @@
 body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
+    line-height: 1.5rem;
 }
 .container{
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     
 }
@@ -39,11 +42,14 @@ body{
 .align-center{
     align-items: center;
 }
-.align-start{
+.flex-start{
     align-items: flex-start;
 }
 .text-align{
     text-align: center;
+}
+.text-align-start{
+    text-align: start;
 }
 img{
     max-width: 100%;
@@ -55,6 +61,9 @@ img{
     margin-bottom: 2rem;
     color: var(--white);
     text-decoration: none;
+}
+.inner{
+    padding-top: 3rem;
 }
 /* header */
 header{
@@ -68,9 +77,41 @@ header{
 .main-menu{
     display: none;
 }
-.main-menu a{
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header i {
     color: var(--white);
-    text-decoration: none;
+}
+ul#menu li{
+	margin:0;
+	padding:0;
+	display: block;
+	position: relative;
+}
+
+ul#menu li a{
+	float: left;
+	padding:0.5rem 1.5rem;
+	color: var(--white);
+	text-transform: uppercase;
+	text-decoration:none;
+}
+ul#menu li:hover{
+	background: var(--blue);
+	color: var(--black);
+}
+/* ul#menu li a:hover{
+	background: var(--blue);
+	color: var(--black);
+} */
+ul#menu .big-btn{
+    color: var(--black);
+}
+header .fa-bars:hover {
+    cursor: pointer;
 }
 /* main */
 section, footer{
@@ -82,6 +123,7 @@ section, footer{
 /* prima sezione */
 #intro img{
     max-width: 75%;
+    margin-bottom: -0.5rem;
 }
 .card{
     background-color: var(--light-blue);
@@ -100,15 +142,13 @@ a i{
     padding-right: 1rem;
 }
 
-.inner{
-    padding-top: 2rem;
-}
+
 .card i{
     color: var(--blue);
     font-size: 50px;
     text-align: center;
 }
-.card h3{
+#intro .card h3{
     color: var(--blue);
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -131,9 +171,12 @@ a i{
     padding-bottom: 3rem;
     color: var(--white);
 }
-#planning h2:not(.card h2){
-    font-size: 2rem;
-    padding: 2rem 0;
+#planning h2{
+    padding-top: 4rem;
+}
+#planning h3{
+    font-size: 1.5rem;
+    color: var(--black);
 }
 #planning p{
     line-height: 1.5rem;
@@ -168,27 +211,16 @@ a i{
     background-color: var(--purple);
     color: var(--white);
 }
+
 #testimonials img{
-    width: 100%;
-    border-radius: 50%;
-}
-.avatars{
-    margin: 0 auto;
     width: 200px;
     height: 200px;
-    background-position: center;
-    background-size: cover;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+
 }
-.testimonail1{
-    background-image: url(../img/testimonial1.jpg);
-}
-.testimonail2{
-    background-image: url(../img/testimonial2.jpg);
-}
-.testimonail3{
-    background-image: url(../img/testimonial3.jpg);
-}
+
 #testimonials h4{
     padding-bottom: 2rem;
 }
@@ -204,6 +236,9 @@ a i{
     color: var(--white);
     font-size: 2rem;
 }
+#features h3{
+    padding: 1.5rem 0;
+}
 #features .card{
     background-color: var(--white);
     text-align: start;
@@ -215,7 +250,7 @@ a i{
 /* quinta sezione */
 #about-us h2{
     color: var(--purple);
-    font-size: 2rem;
+    font-size: 3rem;
     padding-top: 3rem;
 }
 #about-us p{
@@ -252,23 +287,30 @@ a i{
 }
 #get-started h3{
     font-size: 1.5rem;
+    padding: 1.5rem 0;
 }
 #get-started h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding: 1.5rem 0;
     color: var(--yellow);
 }
 .big-btn{
     background-color: var(--white);
     border-radius: 30px;
-    margin-bottom: 2rem;
     padding: 1rem 4rem;
     color: var(--purple);
     text-decoration: none;
     text-align: center;
-    margin-top: 1.5rem;
 }
-#get-started a{
+#get-started .big-btn{
+    margin: 2rem 0;
+}
+#get-started p a{
     color: var(--white);
+}
+.big-btn a{
+    color: var(--purple);
+    text-decoration: none;
 }
 
 /* footer */
@@ -279,6 +321,9 @@ footer{
 footer p{
     padding: 2rem 0;
 }
+footer a{
+    color: var(--purple);
+}
 
 
 /* RESPONSIVE */
@@ -286,6 +331,7 @@ footer p{
     .container{
         max-width: 750px;
     }
+    /* prima sezione */
     #intro .cards{
         display: flex;
         flex-flow: row wrap;
@@ -300,4 +346,84 @@ footer p{
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem);
     }
+    #intro img{
+        margin-right: 8rem;
+    }
+    /* seconda sezione */
+    #planning h2{
+        font-size: 3rem;
+    }
+    /* terza sezione */
+    #testimonials .card{
+        display: flex;
+        align-items: center;
+    }
+    #testimonials .testo{
+        margin-left: 1.5rem;
+    }
+    
+    /* quarta sezione */
+    #features .cards{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    #features .card {
+        width: calc((100% / 2) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    /* quinta sezione */
+    #about-us .box{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #about-us .testo{
+        flex-basis: 60rem;
+    }
+    .inner{
+        padding-left: 3rem;
+    }
+
+    
+}
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .main-menu{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .card-1{
+        display: flex;
+    }
+     
+    #planning .box{
+        display: flex;
+    }
+    #planning .card{
+        margin-top: 12rem;
+        margin-left: 7rem;
+    }
+    #planning h2{
+        font-size: 1.5rem;
+    }
+    #features .card {
+       width: calc((100% / 3) - 1.5rem);
+    }
+        
 }

@@ -20,12 +20,12 @@
                 <i class="fa-solid fa-bars"></i>
             </span>
             <nav class="main-menu">
-                <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
+                <ul id="menu">
+                    <li><a href="#planning">Planning</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#get-started" class="big-btn">Get Started</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,13 +36,14 @@
         <section id="intro">
             <div class="container">
                 <div class="cards">
-                    <div class="card">
-                        <h3>Get a demo application</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat accusamus voluptatum hic alias quae iusto ratione laboriosam amet tempora.</p>
-                        <div class="d-flex d-col align-center inner">
+                    <div class="card card-1 flex-start">
+                        <div class="d-flex d-col align-center flex-start text-align-start ">
+                            <h3>Get a demo application</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat accusamus voluptatum hic alias quae iusto ratione laboriosam amet tempora.</p>
                             <a class="btn" href="#"><i id="apple" class="fa-brands fa-apple"></i> App Store</a>
+                        </div>
+                        <div>
                             <img src="./img/phone.png" alt="">
-    
                         </div>
                     </div>
                     <div class="card d-flex d-col align-center">
@@ -71,18 +72,22 @@
         <!-- seconda sezione -->
         <section id="planning">
             <div class="container">
-                <img src="./img/planning1.png" alt="planning1">
-                <h2>Strategic Planning</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat at cumque quod in alias tempora, beatae rerum esse dolore eius voluptas voluptate quas magni unde, totam cum, laudantium explicabo rem.</p>
-                <div class="card">
-                    <img src="./img/planning2.png" alt="planning2">
-                    <h2>App Developement</h2>
-                    <p>
-                        <em>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ipsa dolore modi assumenda quos minus? Iusto libero id beatae quidem.</em>
-                    </p>
-                    <span> 
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </span>
+                <div class="box">
+                    <div>
+                        <img src="./img/planning1.png" alt="planning1">
+                        <h2>Strategic Planning</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat at cumque quod in alias tempora, beatae rerum esse dolore eius voluptas voluptate quas magni unde, totam cum, laudantium explicabo rem.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/planning2.png" alt="planning2">
+                        <h3>App Developement</h3>
+                        <p>
+                            <em>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ipsa dolore modi assumenda quos minus? Iusto libero id beatae quidem.</em>
+                        </p>
+                        <span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -98,24 +103,25 @@
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <!-- <img src="./img/testimonial1.jpg" alt="testimonial1"> -->
-                        <div class="avatars testimonail1"></div>
-                        <div>
+                        <img src="./img/testimonial1.jpg" alt="testimonial1">
+                        <div class="testo">
                             <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maxime dolores qui nesciunt quia provident! Nam non deserunt et veritatis! <i class="fa-solid fa-quote-right"></i></p>
                             <h4>NAT REYNOLDS</h4>
                         </div>
                     </div>
                     <div class="card">
-                        <!-- <img src="./img/testimonial2.jpg" alt="testimonial2"> -->
-                        <div class="avatars testimonail2"></div>
-                        <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maxime dolores qui nesciunt quia provident! Nam non deserunt et veritatis! <i class="fa-solid fa-quote-right"></i></p>
-                        <h4>CELIA ALMEDA</h4>
+                        <img src="./img/testimonial2.jpg" alt="testimonial2">
+                        <div class="testo">
+                            <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maxime dolores qui nesciunt quia provident! Nam non deserunt et veritatis! <i class="fa-solid fa-quote-right"></i></p>
+                            <h4>CELIA ALMEDA</h4>
+                        </div>
                     </div>
                     <div class="card">
-                        <!-- <img src="./img/testimonial3.jpg" alt="testimonial3"> -->
-                        <div class="avatars testimonail3"></div>
-                        <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maxime dolores qui nesciunt quia provident! Nam non deserunt et veritatis! <i class="fa-solid fa-quote-right"></i></p>
-                        <h4>BOB ROBERTS</h4>
+                        <img src="./img/testimonial3.jpg" alt="testimonial3">
+                        <div class="testo">
+                            <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maxime dolores qui nesciunt quia provident! Nam non deserunt et veritatis! <i class="fa-solid fa-quote-right"></i></p>
+                            <h4>BOB ROBERTS</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,37 +136,37 @@
                     Benefits of working with us
                 </h2>
                 <div class="cards">
-                    <div class="card d-flex d-col align-start">
+                    <div class="card d-flex d-col flex-start">
                         <h2>01</h2>
                         <h3>Hight Quality</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis velit at saepe corrupti. Ratione illum quaerat similique, explicabo rem impedit, consequuntur et ad eos, saepe pariatur natus in nihil!</p>
                         <div class="btn">more</div>
                     </div>
-                    <div class="card d-flex d-col align-start">
+                    <div class="card d-flex d-col flex-start">
                         <h2>02</h2>
                         <h3>Creative Team</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis velit at saepe corrupti. Ratione illum quaerat similique, explicabo rem impedit, consequuntur et ad eos, saepe pariatur natus in nihil!</p>
                         <div class="btn">more</div>
                     </div>
-                    <div class="card d-flex d-col align-start">
+                    <div class="card d-flex d-col flex-start">
                         <h2>03</h2>
                         <h3>Amazing Results</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis velit at saepe corrupti. Ratione illum quaerat similique, explicabo rem impedit, consequuntur et ad eos, saepe pariatur natus in nihil!</p>
                         <div class="btn">more</div>
                     </div>    
-                    <div class="card d-flex d-col align-start">
+                    <div class="card d-flex d-col flex-start">
                         <h2>04</h2>
                         <h3>Best Pricing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis velit at saepe corrupti. Ratione illum quaerat similique, explicabo rem impedit, consequuntur et ad eos, saepe pariatur natus in nihil!</p>
                         <div class="btn">more</div>
                     </div>
-                    <div class="card d-flex d-col align-start">
+                    <div class="card d-flex d-col flex-start">
                         <h2>05</h2>
                         <h3>Innovations</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis velit at saepe corrupti. Ratione illum quaerat similique, explicabo rem impedit, consequuntur et ad eos, saepe pariatur natus in nihil!</p>
                         <div class="btn">more</div>
                     </div>
-                    <div class="card d-flex d-col align-start">
+                    <div class="card d-flex d-col flex-start">
                         <h2>06</h2>
                         <h3>24/7 Support</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis velit at saepe corrupti. Ratione illum quaerat similique, explicabo rem impedit, consequuntur et ad eos, saepe pariatur natus in nihil!</p>
@@ -172,17 +178,17 @@
         <!-- quinta sezione -->
         <section id="about-us">
             <div class="container">
-                <div>
-                    <div>
+                <div class="box">
+                    <div class="testo">
                         <h2>About us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus asperiores eveniet dicta numquam sunt hic, adipisci temporibus quasi ducimus rem voluptates nam eligendi voluptate officiis, praesentium qui deleniti et laborum minima nesciunt sequi! Quam quos est totam fugit reiciendis tenetur esse, odio harum, recusandae doloremque sint optio quidem vitae suscipit praesentium inventore odit dicta deserunt cupiditate eum maiores hic distinctio.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consectetur magni vero reiciendis nostrum ipsam, laboriosam repellat! Voluptas, odio! Sint assumenda sunt unde recusandae cumque neque vitae amet repudiandae possimus tenetur! Deserunt, magni eos illo amet est omnis perferendis ullam?</p>
+                    </div>
+                    <div class="d-flex d-col flex-start inner">
                         <div class="avatar">
                             <img src="./img/about.jpg" alt="about">
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
-                    </div>
-                    <div class="d-flex d-col align-start">
                         <h3>
                             I help companies tincidunt tortor aliquam nulla facilisi cras fermenum odio.
                         </h3>
@@ -204,7 +210,7 @@
                 <h2>It&#39s Free!</h2>
                 <p>We&#39re still in beta and we will be for awhile. As we add more functionality, we&#39ll look into other plans with more controls.</p>
                 <div class="big-btn">
-                    Get Started
+                    <a href="#">Get Started</a>
                 </div>
                 <p>Copiright 2021 Boolean - Classe XX - <a href="#">Privacy policy</a></p>
             </div>
@@ -212,7 +218,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="debug">
+    <footer>
         <div class="container text-align">
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum harum culpa adipisci, quae alias odit nemo!
