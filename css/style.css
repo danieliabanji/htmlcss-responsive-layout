@@ -77,6 +77,12 @@ header{
 .main-menu{
     display: none;
 }
+.hamburger:hover .main-menu{
+    display: inline-block;
+}
+.hamburger:hover .fa-bars{
+    display: none;
+}
 header nav ul {
     display: flex;
     align-items: center;
@@ -103,10 +109,7 @@ ul#menu li:hover{
 	background: var(--blue);
 	color: var(--black);
 }
-/* ul#menu li a:hover{
-	background: var(--blue);
-	color: var(--black);
-} */
+
 ul#menu .big-btn{
     color: var(--black);
 }
@@ -401,12 +404,15 @@ footer a{
         margin: 0 auto;
     }
 
+
+
     .main-menu{
         display: block;
     }
-    .hamburger{
+    .fa-bars{
         display: none;
     }
+   
 
     .card-1{
         display: flex;
